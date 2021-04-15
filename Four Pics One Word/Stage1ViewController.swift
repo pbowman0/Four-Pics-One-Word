@@ -17,6 +17,8 @@ class Stage1ViewController: UIViewController {
     @IBOutlet weak var letterBank: UITextView!
     @IBAction func button(_ sender: UIButton) {
     }
+    @IBAction func hintButton(_ sender: Any) {
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
