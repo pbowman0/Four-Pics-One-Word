@@ -9,6 +9,15 @@ import UIKit
 
 class Stage1ViewController: UIViewController {
 
+    @IBOutlet weak var image1: UIImageView!
+    @IBOutlet weak var image2: UIImageView!
+    @IBOutlet weak var image3: UIImageView!
+    @IBOutlet weak var image4: UIImageView!
+    @IBOutlet weak var textBox: UITextField!
+    @IBOutlet weak var letterBank: UITextView!
+    @IBAction func button(_ sender: UIButton) {
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

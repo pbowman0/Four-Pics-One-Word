@@ -107,10 +107,10 @@
             </objects>
             <point key="canvasLocation" x="22" y="57"/>
         </scene>
-        <!--View Controller-->
+        <!--Stage1 View Controller-->
         <scene sceneID="vDW-9p-n0x">
             <objects>
-                <viewController id="Aeu-IR-C7O" sceneMemberID="viewController">
+                <viewController id="Aeu-IR-C7O" customClass="Stage1ViewController" customModule="Four_Pics_One_Word" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="60z-8G-wGb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -168,6 +168,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="button:" destination="Aeu-IR-C7O" eventType="touchUpInside" id="fSO-Z0-OY1"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NUB-wJ-v1E"/>
@@ -175,6 +178,14 @@
                     </view>
                     <navigationItem key="navigationItem" id="NMx-Ym-e3P"/>
                     <value key="contentSizeForViewInPopover" type="size" width="414" height="842"/>
+                    <connections>
+                        <outlet property="image1" destination="fKG-jm-icR" id="D9l-RE-KtK"/>
+                        <outlet property="image2" destination="ovJ-d5-gjn" id="5DN-cH-CCC"/>
+                        <outlet property="image3" destination="VLd-TC-Jty" id="WTI-Yy-kQb"/>
+                        <outlet property="image4" destination="Pwx-hL-nBf" id="ZOm-lD-Fqn"/>
+                        <outlet property="letterBank" destination="KPp-dC-eSK" id="LuI-ig-tkA"/>
+                        <outlet property="textBox" destination="WfT-zr-C7r" id="ba8-CV-mnj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CPQ-aR-kz4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
