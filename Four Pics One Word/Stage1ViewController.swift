@@ -9,6 +9,8 @@ import UIKit
 
 class Stage1ViewController: UIViewController {
     
+    var correctAnswer1 = ["Fall", "fall", "FALL"]
+
     @IBOutlet weak var image1: UIImageView!
     @IBOutlet weak var image2: UIImageView!
     @IBOutlet weak var image3: UIImageView!
