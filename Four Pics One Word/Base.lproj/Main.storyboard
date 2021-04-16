@@ -146,7 +146,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="letter bank" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="KPp-dC-eSK">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="letter bank: A E G F L H M I L O" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="KPp-dC-eSK">
                                 <rect key="frame" x="39" y="546" width="337" height="165"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -196,6 +196,7 @@
                         <outlet property="image4" destination="Pwx-hL-nBf" id="ZOm-lD-Fqn"/>
                         <outlet property="letterBank" destination="KPp-dC-eSK" id="LuI-ig-tkA"/>
                         <outlet property="textBox" destination="WfT-zr-C7r" id="ba8-CV-mnj"/>
+                        <segue destination="pX6-9w-QK6" kind="show" identifier="Stage1toStage2Segue" id="hJx-tM-ZLY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CPQ-aR-kz4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -207,7 +208,7 @@
             <objects>
                 <viewController id="pX6-9w-QK6" customClass="Stage2ViewController" customModule="Four_Pics_One_Word" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6Zu-eU-Pj1">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bolt" translatesAutoresizingMaskIntoConstraints="NO" id="5Ib-aj-nke">
@@ -241,7 +242,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="letter bank" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vPw-3r-Tzb">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="letter bank: B T Z S I O L M E W T P G L L" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vPw-3r-Tzb">
                                 <rect key="frame" x="39" y="546" width="337" height="165"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -263,6 +264,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="answerButton:" destination="pX6-9w-QK6" eventType="touchUpInside" id="BmJ-1t-Jc7"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZHm-V4-IEQ">
                                 <rect key="frame" x="338" y="26" width="56" height="35"/>
@@ -272,6 +276,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="hintButton:" destination="pX6-9w-QK6" eventType="touchUpInside" id="I2y-f0-yS8"/>
                                     <action selector="hintButton:" destination="Aeu-IR-C7O" eventType="touchUpInside" id="SVd-Dm-30m"/>
                                 </connections>
                             </button>
@@ -279,6 +284,12 @@
                         <viewLayoutGuide key="safeArea" id="QH7-Eb-wVI"/>
                         <color key="backgroundColor" red="0.57231593130000002" green="0.45797073840000002" blue="0.52408361429999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Bsv-3g-JdW"/>
+                    <connections>
+                        <outlet property="textField" destination="5m0-82-O4n" id="0Nd-8Z-ENh"/>
+                        <outlet property="wordBank" destination="vPw-3r-Tzb" id="3hC-EY-COg"/>
+                        <segue destination="6gh-NK-E33" kind="show" identifier="Stage2toStage3Segue" id="TWS-6z-COX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BJ9-KW-cp0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -289,7 +300,7 @@
             <objects>
                 <viewController id="6gh-NK-E33" customClass="Stage3ViewController" customModule="Four_Pics_One_Word" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fE2-V6-bUZ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stopwatch" translatesAutoresizingMaskIntoConstraints="NO" id="cJm-0m-qVd">
@@ -323,7 +334,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="letter bank" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="oJp-hK-jDt">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="letter bank: I N Y L Q E A M U S Y T C R B O" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="oJp-hK-jDt">
                                 <rect key="frame" x="39" y="546" width="337" height="165"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -361,6 +372,7 @@
                         <viewLayoutGuide key="safeArea" id="3B4-hD-aFT"/>
                         <color key="backgroundColor" red="0.57231593130000002" green="0.45797073840000002" blue="0.52408361429999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="YCK-5b-uSx"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J5E-1D-wLC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

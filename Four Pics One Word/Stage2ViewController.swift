@@ -9,9 +9,14 @@ import UIKit
 
 class Stage2ViewController: UIViewController {
     
-    
+    @IBAction func hintButton(_ sender: UIButton) {
+    }
+    @IBOutlet weak var textField: UITextField!
     var data = ""
-    
+    @IBOutlet weak var wordBank: UITextView!
+    @IBAction func answerButton(_ sender: UIButton) {
+        performSegue(withIdentifier: "Stage2toStage3Segue", sender: Any?.self)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
     }

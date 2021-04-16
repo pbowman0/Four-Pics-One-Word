@@ -16,6 +16,7 @@ class Stage1ViewController: UIViewController {
     @IBOutlet weak var textBox: UITextField!
     @IBOutlet weak var letterBank: UITextView!
     @IBAction func button(_ sender: UIButton) {
+        performSegue(withIdentifier: "Stage1toStage2Segue", sender: Any?.self)
     }
     @IBAction func hintButton(_ sender: Any) {
 
