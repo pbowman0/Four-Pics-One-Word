@@ -9,16 +9,25 @@ import UIKit
 
 class Stage2ViewController: UIViewController {
     
+    var correctAnswer2 = ["Bolt", "bolt", "BOLT"]
+    @IBOutlet weak var hintText: UITextView!
     @IBAction func hintButton(_ sender: UIButton) {
+        hintText.text = "Hint: Starts with \"B\" ends with \"T\""
     }
     @IBOutlet weak var textField: UITextField!
     var data = ""
     @IBOutlet weak var wordBank: UITextView!
     @IBAction func answerButton(_ sender: UIButton) {
-        performSegue(withIdentifier: "Stage2toStage3Segue", sender: Any?.self)
+        for answer in correctAnswer2
+        {
+            if answer == textField.text {
+                performSegue(withIdentifier: "Stage2toStage3Segue", sender: Any?.self)
+            }
+        }
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        hintText.text = ""
     }
     
     override func viewWillAppear(_ animated: Bool) {

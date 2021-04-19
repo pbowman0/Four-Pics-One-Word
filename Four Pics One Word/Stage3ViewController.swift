@@ -11,10 +11,14 @@ class Stage3ViewController: UIViewController {
 
     var data = ""
     
+    @IBOutlet weak var hintText: UITextView!
+    @IBAction func hintButton(_ sender: UIButton) {
+        hintText.text = "60 seconds..."
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        hintText.text = ""
         // Do any additional setup after loading the view.
     }
     
