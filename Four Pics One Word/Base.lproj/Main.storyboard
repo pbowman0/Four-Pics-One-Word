@@ -396,7 +396,7 @@
                     <navigationItem key="navigationItem" id="YCK-5b-uSx"/>
                     <connections>
                         <outlet property="hintText" destination="aoj-Ow-3ys" id="oEq-Qq-Kfc"/>
-                        <segue destination="JNM-62-Flx" kind="show" identifier="Stage3toStage34Segue" id="ZmW-Bw-QrT"/>
+                        <segue destination="JNM-62-Flx" kind="show" identifier="Stage3toStage4Segue" id="ZmW-Bw-QrT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J5E-1D-wLC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -490,18 +490,19 @@
                     <navigationItem key="navigationItem" id="5CH-AG-JUg"/>
                     <connections>
                         <outlet property="hintText" destination="RYS-5H-6rD" id="JtR-3o-BSp"/>
+                        <segue destination="Ov7-im-cry" kind="show" identifier="Stage4toStage5Segue" id="NhQ-tk-5gK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aN0-nj-bKH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3104" y="57"/>
         </scene>
-        <!--Stage3 View Controller-->
+        <!--Stage5 View Controller-->
         <scene sceneID="nTf-Us-Ava">
             <objects>
-                <viewController id="Ov7-im-cry" customClass="Stage3ViewController" customModule="Four_Pics_One_Word" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Ov7-im-cry" customClass="Stage5ViewController" customModule="Four_Pics_One_Word" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e84-2c-FhY">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="current diagram" translatesAutoresizingMaskIntoConstraints="NO" id="n7P-wj-eHx">
