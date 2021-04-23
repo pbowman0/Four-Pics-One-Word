@@ -105,7 +105,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="22" y="57"/>
+            <point key="canvasLocation" x="-62" y="57"/>
         </scene>
         <!--Stage1 View Controller-->
         <scene sceneID="vDW-9p-n0x">
@@ -307,7 +307,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BJ9-KW-cp0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1473.913043478261" y="56.919642857142854"/>
+            <point key="canvasLocation" x="1554" y="57"/>
         </scene>
         <!--Stage3 View Controller-->
         <scene sceneID="vSS-JA-GyM">
@@ -382,7 +382,7 @@
                                     <action selector="hintButton:" destination="Aeu-IR-C7O" eventType="touchUpInside" id="oNp-zQ-5kV"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Hint: 60 seconds..." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="aoj-Ow-3ys">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Hint: 60 seconds is called a ___________" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="aoj-Ow-3ys">
                                 <rect key="frame" x="39" y="632" width="337" height="89"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -396,26 +396,221 @@
                     <navigationItem key="navigationItem" id="YCK-5b-uSx"/>
                     <connections>
                         <outlet property="hintText" destination="aoj-Ow-3ys" id="oEq-Qq-Kfc"/>
+                        <segue destination="JNM-62-Flx" kind="show" identifier="Stage3toStage34Segue" id="ZmW-Bw-QrT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J5E-1D-wLC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2150.7246376811595" y="56.919642857142854"/>
+            <point key="canvasLocation" x="2325" y="57"/>
+        </scene>
+        <!--Stage4 View Controller-->
+        <scene sceneID="aqT-8U-blQ">
+            <objects>
+                <viewController id="JNM-62-Flx" customClass="Stage4ViewController" customModule="Four_Pics_One_Word" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wnH-J0-xC3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nfldraft" translatesAutoresizingMaskIntoConstraints="NO" id="Ax9-uj-ArB">
+                                <rect key="frame" x="20" y="96" width="175" height="175"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="first draft" translatesAutoresizingMaskIntoConstraints="NO" id="HVV-5H-JK7">
+                                <rect key="frame" x="219" y="96" width="175" height="175"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="military draft" highlightedImage="military draft" translatesAutoresizingMaskIntoConstraints="NO" id="dnF-gE-Cgk">
+                                <rect key="frame" x="20" y="289" width="175" height="175"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="window draft" translatesAutoresizingMaskIntoConstraints="NO" id="HWy-0L-cy0">
+                                <rect key="frame" x="219" y="289" width="175" height="175"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Stage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bC7-Sr-Uhz">
+                                <rect key="frame" x="111" y="36" width="135" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="4" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="VVY-Ol-S6S">
+                                <rect key="frame" x="254" y="36" width="50" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="letter bank: D A E I O U Y R F T Q W H J K L M N" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1lN-bK-7Ad">
+                                <rect key="frame" x="39" y="546" width="337" height="165"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Answer Here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hbw-Ic-6Xb">
+                                <rect key="frame" x="100" y="494" width="215" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uIr-sb-AtG">
+                                <rect key="frame" x="49" y="729" width="316" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Click to Submit Answer!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="meY-fI-mYz">
+                                <rect key="frame" x="338" y="24" width="56" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Hint!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="hintButton:" destination="JNM-62-Flx" eventType="touchUpInside" id="7x8-Ql-0w2"/>
+                                    <action selector="hintButton:" destination="Aeu-IR-C7O" eventType="touchUpInside" id="gE2-vL-C6J"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Hint: The first revision of an essay is called a first _ _ _ _ _" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="RYS-5H-6rD">
+                                <rect key="frame" x="39" y="632" width="337" height="102.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="r3Q-Da-L1a"/>
+                        <color key="backgroundColor" red="0.57231593130000002" green="0.45797073840000002" blue="0.52408361429999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5CH-AG-JUg"/>
+                    <connections>
+                        <outlet property="hintText" destination="RYS-5H-6rD" id="JtR-3o-BSp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aN0-nj-bKH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3104" y="57"/>
+        </scene>
+        <!--Stage3 View Controller-->
+        <scene sceneID="nTf-Us-Ava">
+            <objects>
+                <viewController id="Ov7-im-cry" customClass="Stage3ViewController" customModule="Four_Pics_One_Word" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="e84-2c-FhY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="current diagram" translatesAutoresizingMaskIntoConstraints="NO" id="n7P-wj-eHx">
+                                <rect key="frame" x="20" y="96" width="175" height="175"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="current time" translatesAutoresizingMaskIntoConstraints="NO" id="86G-ct-JOU">
+                                <rect key="frame" x="219" y="96" width="175" height="175"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="electric current" highlightedImage="military draft" translatesAutoresizingMaskIntoConstraints="NO" id="p9c-ve-5OR">
+                                <rect key="frame" x="20" y="289" width="175" height="175"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ocean current" translatesAutoresizingMaskIntoConstraints="NO" id="WVf-fs-id0">
+                                <rect key="frame" x="219" y="289" width="175" height="175"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Stage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CJN-Ib-9FV">
+                                <rect key="frame" x="111" y="36" width="135" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="5" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tAd-1b-cMS">
+                                <rect key="frame" x="254" y="36" width="50" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="letter bank: A B C U D Y M R R Q B N I E N T Z O P" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="lLs-Da-8xD">
+                                <rect key="frame" x="39" y="546" width="337" height="165"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Answer Here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fpG-gD-bEx">
+                                <rect key="frame" x="100" y="494" width="215" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M8J-JB-LY7">
+                                <rect key="frame" x="49" y="729" width="316" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Click to Submit Answer!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SA5-7x-5fD">
+                                <rect key="frame" x="338" y="24" width="56" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Hint!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="hintButton:" destination="Ov7-im-cry" eventType="touchUpInside" id="PrK-QP-JwK"/>
+                                    <action selector="hintButton:" destination="Aeu-IR-C7O" eventType="touchUpInside" id="by7-2c-96C"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Hint: Contains 7 letters, begins with &quot;C&quot; and ends with &quot;T&quot;" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="HXg-a6-e4X">
+                                <rect key="frame" x="39" y="632" width="337" height="102.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BPG-Ye-P7T"/>
+                        <color key="backgroundColor" red="0.57231593130000002" green="0.45797073840000002" blue="0.52408361429999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Hqs-la-5cM"/>
+                    <connections>
+                        <outlet property="hintText" destination="HXg-a6-e4X" id="wV6-sU-hJF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ETa-hh-mpx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3874" y="57"/>
         </scene>
     </scenes>
     <resources>
         <image name="apple" width="227" height="222"/>
         <image name="bolt" width="293" height="349"/>
         <image name="clock" width="959" height="638"/>
+        <image name="current diagram" width="277" height="182"/>
+        <image name="current time" width="276" height="183"/>
         <image name="decor" width="1080" height="675"/>
+        <image name="electric current" width="281" height="179"/>
         <image name="fall" width="248" height="203"/>
         <image name="falling" width="237" height="213"/>
+        <image name="first draft" width="610" height="330"/>
         <image name="lightning" width="636" height="477"/>
+        <image name="military draft" width="275" height="183"/>
         <image name="minute" width="1000" height="1000"/>
+        <image name="nfldraft" width="1200" height="800"/>
+        <image name="ocean current" width="1000" height="522"/>
         <image name="run" width="870" height="500"/>
         <image name="sand" width="2448" height="3264"/>
         <image name="stopwatch" width="760" height="400"/>
         <image name="tool" width="946" height="766"/>
+        <image name="window draft" width="213" height="237"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
