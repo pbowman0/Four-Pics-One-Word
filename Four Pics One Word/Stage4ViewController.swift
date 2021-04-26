@@ -9,21 +9,40 @@ import UIKit
 
 class Stage4ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    var correctAnswer4 = ["draft", "Draft", "DRAFT"]
+    
+    @IBOutlet weak var hintText: UITextView!
+    @IBAction func hintButton(_ sender: UIButton) {
+        hintText.text = "The first time you write an essay is called a first _ _ _ _ _"
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBOutlet weak var textField: UITextField!
+    var data = ""
+    
+    @IBAction func answerButton(_ sender: UIButton) {
+        for answer in correctAnswer4{
+            if answer == textField.text {
+                performSegue(withIdentifier: "Stage4toStage5Segue", sender: Any?.self)
+            }
+        }
     }
-    */
-
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        hintText.text = ""
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        print(data)
+    }
+    
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let dvc = segue.destination as! Stage5ViewController
+        dvc.data = "This came from the fourth VC"
+    }
 }
+
+
+

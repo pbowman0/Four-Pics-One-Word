@@ -369,6 +369,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="answerButton:" destination="6gh-NK-E33" eventType="touchUpInside" id="3gV-80-OKI"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i4q-gL-9fK">
                                 <rect key="frame" x="338" y="24" width="56" height="35"/>
@@ -396,6 +399,7 @@
                     <navigationItem key="navigationItem" id="YCK-5b-uSx"/>
                     <connections>
                         <outlet property="hintText" destination="aoj-Ow-3ys" id="oEq-Qq-Kfc"/>
+                        <outlet property="textField" destination="F0z-Sh-vdi" id="oQo-WF-Cqg"/>
                         <segue destination="JNM-62-Flx" kind="show" identifier="Stage3toStage4Segue" id="ZmW-Bw-QrT"/>
                     </connections>
                 </viewController>
@@ -463,6 +467,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="answerButton:" destination="JNM-62-Flx" eventType="touchUpInside" id="093-ho-hdL"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="meY-fI-mYz">
                                 <rect key="frame" x="338" y="24" width="56" height="35"/>
@@ -476,8 +483,8 @@
                                     <action selector="hintButton:" destination="Aeu-IR-C7O" eventType="touchUpInside" id="gE2-vL-C6J"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Hint: The first revision of an essay is called a first _ _ _ _ _" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="RYS-5H-6rD">
-                                <rect key="frame" x="39" y="632" width="337" height="102.5"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Hint: The first time you write an essay is called a first _ _ _ _ _" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="RYS-5H-6rD">
+                                <rect key="frame" x="20" y="634" width="375" height="106"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
@@ -490,12 +497,13 @@
                     <navigationItem key="navigationItem" id="5CH-AG-JUg"/>
                     <connections>
                         <outlet property="hintText" destination="RYS-5H-6rD" id="JtR-3o-BSp"/>
+                        <outlet property="textField" destination="hbw-Ic-6Xb" id="gli-Pb-tdM"/>
                         <segue destination="Ov7-im-cry" kind="show" identifier="Stage4toStage5Segue" id="NhQ-tk-5gK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aN0-nj-bKH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3104" y="57"/>
+            <point key="canvasLocation" x="3102.898550724638" y="56.919642857142854"/>
         </scene>
         <!--Stage5 View Controller-->
         <scene sceneID="nTf-Us-Ava">
@@ -557,6 +565,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="answerButton:" destination="Ov7-im-cry" eventType="touchUpInside" id="DGF-ch-sDC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SA5-7x-5fD">
                                 <rect key="frame" x="338" y="24" width="56" height="35"/>
@@ -584,6 +595,7 @@
                     <navigationItem key="navigationItem" id="Hqs-la-5cM"/>
                     <connections>
                         <outlet property="hintText" destination="HXg-a6-e4X" id="wV6-sU-hJF"/>
+                        <outlet property="textField" destination="fpG-gD-bEx" id="hva-kw-mmd"/>
                         <segue destination="GMd-iG-Syk" kind="show" identifier="Stage5toFinalStageSegue" id="pql-4O-hdn"/>
                     </connections>
                 </viewController>
