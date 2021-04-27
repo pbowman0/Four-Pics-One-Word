@@ -603,10 +603,10 @@
             </objects>
             <point key="canvasLocation" x="3874" y="57"/>
         </scene>
-        <!--View Controller-->
+        <!--Final View Controller-->
         <scene sceneID="RqC-1r-jNq">
             <objects>
-                <viewController id="GMd-iG-Syk" customClass="ViewController" customModule="Four_Pics_One_Word" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="GMd-iG-Syk" customClass="FinalViewController" customModule="Four_Pics_One_Word" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9VC-Cf-hwD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

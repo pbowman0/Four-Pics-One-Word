@@ -13,7 +13,7 @@ class Stage5ViewController: UIViewController {
     
     @IBOutlet weak var hintText: UITextView!
     @IBAction func hintButton(_ sender: UIButton) {
-        hintText.text = "The first time you write an essay is called a first _ _ _ _ _"
+        hintText.text = "Contains 7 letters, begins with \"C\" and ends with \"T\""
     }
     
     @IBOutlet weak var textField: UITextField!
@@ -22,7 +22,7 @@ class Stage5ViewController: UIViewController {
     @IBAction func answerButton(_ sender: UIButton) {
         for answer in correctAnswer5{
             if answer == textField.text {
-                performSegue(withIdentifier: "Stage5toFinalStage5Segue", sender: Any?.self)
+                performSegue(withIdentifier: "Stage5toFinalStageSegue", sender: Any?.self)
             }
         }
     }
@@ -39,8 +39,8 @@ class Stage5ViewController: UIViewController {
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let dvc = segue.destination as! Stage5ViewController
-        dvc.data = "This came from the fourth VC"
+        let dvc = segue.destination as! FinalViewController
+        dvc.data = "This came from the fifth VC"
     }
-
 }
+

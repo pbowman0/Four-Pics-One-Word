@@ -11,6 +11,7 @@
 		3F3B4C0E2629E2D000D9E2C6 /* Stage3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3B4C0D2629E2D000D9E2C6 /* Stage3ViewController.swift */; };
 		3F3B4C122631D01B00D9E2C6 /* Stage4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3B4C112631D01B00D9E2C6 /* Stage4ViewController.swift */; };
 		3F3B4C15263323BB00D9E2C6 /* Stage5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3B4C14263323BB00D9E2C6 /* Stage5ViewController.swift */; };
+		3F3D09DD2638629D00779F65 /* FinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3D09DC2638629D00779F65 /* FinalViewController.swift */; };
 		3F9931E1262894DC00F222EE /* Stage1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9931E0262894DC00F222EE /* Stage1ViewController.swift */; };
 		3FF97353261F59D0000F0CC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF97352261F59D0000F0CC4 /* AppDelegate.swift */; };
 		3FF97355261F59D0000F0CC4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF97354261F59D0000F0CC4 /* SceneDelegate.swift */; };
@@ -25,6 +26,7 @@
 		3F3B4C0D2629E2D000D9E2C6 /* Stage3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stage3ViewController.swift; sourceTree = "<group>"; };
 		3F3B4C112631D01B00D9E2C6 /* Stage4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stage4ViewController.swift; sourceTree = "<group>"; };
 		3F3B4C14263323BB00D9E2C6 /* Stage5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stage5ViewController.swift; sourceTree = "<group>"; };
+		3F3D09DC2638629D00779F65 /* FinalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalViewController.swift; sourceTree = "<group>"; };
 		3F9931E0262894DC00F222EE /* Stage1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stage1ViewController.swift; sourceTree = "<group>"; };
 		3FF9734F261F59D0000F0CC4 /* Four Pics One Word.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Four Pics One Word.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FF97352261F59D0000F0CC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				3FF97354261F59D0000F0CC4 /* SceneDelegate.swift */,
 				3FF97356261F59D0000F0CC4 /* ViewController.swift */,
 				3FF97358261F59D0000F0CC4 /* Main.storyboard */,
+				3F3D09DC2638629D00779F65 /* FinalViewController.swift */,
 				3F3B4C14263323BB00D9E2C6 /* Stage5ViewController.swift */,
 				3F3B4C112631D01B00D9E2C6 /* Stage4ViewController.swift */,
 				3F3B4C0D2629E2D000D9E2C6 /* Stage3ViewController.swift */,
@@ -153,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F3B4C0B2629E2A800D9E2C6 /* Stage2ViewController.swift in Sources */,
+				3F3D09DD2638629D00779F65 /* FinalViewController.swift in Sources */,
 				3F3B4C122631D01B00D9E2C6 /* Stage4ViewController.swift in Sources */,
 				3FF97357261F59D0000F0CC4 /* ViewController.swift in Sources */,
 				3F9931E1262894DC00F222EE /* Stage1ViewController.swift in Sources */,
