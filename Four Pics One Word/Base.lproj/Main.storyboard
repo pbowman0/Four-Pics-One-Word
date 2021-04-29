@@ -148,8 +148,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="letter bank: A E G F L H M I L O" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="KPp-dC-eSK">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="letter bank: A E G F L H M I L O" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="KPp-dC-eSK">
                                 <rect key="frame" x="39" y="546" width="337" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -160,8 +161,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Gp-4h-vmH">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Gp-4h-vmH">
                                 <rect key="frame" x="53.5" y="729" width="307" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Click to Submit Answer!">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -182,8 +184,9 @@
                                     <action selector="hintButton:" destination="Aeu-IR-C7O" eventType="touchUpInside" id="sWE-Ed-FlE"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="Hint: What season is October in?" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Yyt-RI-hzF">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Hint: What season is October in?" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Yyt-RI-hzF">
                                 <rect key="frame" x="39" y="613" width="337" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -191,11 +194,6 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NUB-wJ-v1E"/>
                         <color key="backgroundColor" red="0.57231593130000002" green="0.45797073840000002" blue="0.52408361429999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="9Gp-4h-vmH" firstAttribute="centerX" secondItem="60z-8G-wGb" secondAttribute="centerX" id="9Kq-lI-Xat"/>
-                            <constraint firstItem="Yyt-RI-hzF" firstAttribute="centerX" secondItem="60z-8G-wGb" secondAttribute="centerX" id="JOD-YQ-6Dc"/>
-                            <constraint firstItem="KPp-dC-eSK" firstAttribute="centerX" secondItem="60z-8G-wGb" secondAttribute="centerX" id="fBI-TC-iya"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="NMx-Ym-e3P"/>
                     <value key="contentSizeForViewInPopover" type="size" width="414" height="842"/>
@@ -253,8 +251,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="letter bank: B T Z S I O L M E W T P G L L" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vPw-3r-Tzb">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="letter bank: B T Z S I O L M E W T P G L L" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vPw-3r-Tzb">
                                 <rect key="frame" x="39" y="546" width="337" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -265,8 +264,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="olw-3O-dfd">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="olw-3O-dfd">
                                 <rect key="frame" x="53.5" y="729" width="307" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Click to Submit Answer!">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -288,8 +288,9 @@
                                     <action selector="hintButton:" destination="Aeu-IR-C7O" eventType="touchUpInside" id="SVd-Dm-30m"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="Hint: Starts with &quot;B&quot; ends with &quot;T&quot;" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1FU-me-LKX">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Hint: Starts with &quot;B&quot; ends with &quot;T&quot;" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1FU-me-LKX">
                                 <rect key="frame" x="39" y="628" width="337" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -297,11 +298,6 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="QH7-Eb-wVI"/>
                         <color key="backgroundColor" red="0.57231593130000002" green="0.45797073840000002" blue="0.52408361429999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="vPw-3r-Tzb" firstAttribute="centerX" secondItem="6Zu-eU-Pj1" secondAttribute="centerX" id="35g-qf-4rl"/>
-                            <constraint firstItem="1FU-me-LKX" firstAttribute="centerX" secondItem="6Zu-eU-Pj1" secondAttribute="centerX" id="Vcx-JU-PV5"/>
-                            <constraint firstItem="olw-3O-dfd" firstAttribute="centerX" secondItem="6Zu-eU-Pj1" secondAttribute="centerX" id="dAM-aN-jgH"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Bsv-3g-JdW"/>
                     <connections>
@@ -354,8 +350,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="letter bank: I N Y L Q E A M U S Y T C R B O" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="oJp-hK-jDt">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="letter bank: I N Y L Q E A M U S Y T C R B O" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="oJp-hK-jDt">
                                 <rect key="frame" x="39" y="546" width="337" height="165"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -366,8 +363,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gqg-do-W5f">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gqg-do-W5f">
                                 <rect key="frame" x="53.5" y="729" width="307" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Click to Submit Answer!">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -389,8 +387,9 @@
                                     <action selector="hintButton:" destination="Aeu-IR-C7O" eventType="touchUpInside" id="oNp-zQ-5kV"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="Hint: 60 seconds is called a ___________" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="aoj-Ow-3ys">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Hint: 60 seconds is called a ___________" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="aoj-Ow-3ys">
                                 <rect key="frame" x="39" y="632" width="337" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -398,11 +397,6 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3B4-hD-aFT"/>
                         <color key="backgroundColor" red="0.57231593130000002" green="0.45797073840000002" blue="0.52408361429999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="gqg-do-W5f" firstAttribute="centerX" secondItem="fE2-V6-bUZ" secondAttribute="centerX" id="Hu8-eV-VzO"/>
-                            <constraint firstItem="aoj-Ow-3ys" firstAttribute="centerX" secondItem="fE2-V6-bUZ" secondAttribute="centerX" id="JSS-0Q-p4S"/>
-                            <constraint firstItem="oJp-hK-jDt" firstAttribute="centerX" secondItem="fE2-V6-bUZ" secondAttribute="centerX" id="QFw-NF-0sx"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="YCK-5b-uSx"/>
                     <connections>
@@ -454,8 +448,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="letter bank: D A E I O U Y R F T Q W H J K L M N" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1lN-bK-7Ad">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="letter bank: D A E I O U Y R F T Q W H J K L M N" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1lN-bK-7Ad">
                                 <rect key="frame" x="39" y="546" width="337" height="165"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -466,8 +461,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uIr-sb-AtG">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uIr-sb-AtG">
                                 <rect key="frame" x="53.5" y="729" width="307" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Click to Submit Answer!">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -489,8 +485,9 @@
                                     <action selector="hintButton:" destination="Aeu-IR-C7O" eventType="touchUpInside" id="gE2-vL-C6J"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="Hint: The first time you write an essay is called a first _ _ _ _ _" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="RYS-5H-6rD">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Hint: The first time you write an essay is called a first _ _ _ _ _" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="RYS-5H-6rD">
                                 <rect key="frame" x="20" y="634" width="375" height="106"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -498,11 +495,6 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="r3Q-Da-L1a"/>
                         <color key="backgroundColor" red="0.57231593130000002" green="0.45797073840000002" blue="0.52408361429999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="RYS-5H-6rD" firstAttribute="centerX" secondItem="wnH-J0-xC3" secondAttribute="centerX" id="2U5-qA-tkc"/>
-                            <constraint firstItem="1lN-bK-7Ad" firstAttribute="centerX" secondItem="wnH-J0-xC3" secondAttribute="centerX" id="9IC-hp-pDr"/>
-                            <constraint firstItem="uIr-sb-AtG" firstAttribute="centerX" secondItem="wnH-J0-xC3" secondAttribute="centerX" id="e41-vA-Zdl"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="5CH-AG-JUg"/>
                     <connections>
@@ -554,8 +546,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="letter bank: A B C U D Y M R R Q B N I E N T Z O P" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="lLs-Da-8xD">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="letter bank: A B C U D Y M R R Q B N I E N T Z O P" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="lLs-Da-8xD">
                                 <rect key="frame" x="39" y="546" width="337" height="165"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -566,8 +559,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M8J-JB-LY7">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M8J-JB-LY7">
                                 <rect key="frame" x="53.5" y="729" width="307" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Click to Submit Answer!">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -589,8 +583,9 @@
                                     <action selector="hintButton:" destination="Aeu-IR-C7O" eventType="touchUpInside" id="by7-2c-96C"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="Hint: Contains 7 letters, begins with &quot;C&quot; and ends with &quot;T&quot;" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="HXg-a6-e4X">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Hint: Contains 7 letters, begins with &quot;C&quot; and ends with &quot;T&quot;" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="HXg-a6-e4X">
                                 <rect key="frame" x="39" y="632" width="337" height="102.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -598,11 +593,6 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="BPG-Ye-P7T"/>
                         <color key="backgroundColor" red="0.57231593130000002" green="0.45797073840000002" blue="0.52408361429999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="lLs-Da-8xD" firstAttribute="centerX" secondItem="e84-2c-FhY" secondAttribute="centerX" id="50Q-6s-G29"/>
-                            <constraint firstItem="M8J-JB-LY7" firstAttribute="centerX" secondItem="e84-2c-FhY" secondAttribute="centerX" id="Yua-fT-SxB"/>
-                            <constraint firstItem="HXg-a6-e4X" firstAttribute="centerX" secondItem="e84-2c-FhY" secondAttribute="centerX" id="bAy-dO-QSx"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Hqs-la-5cM"/>
                     <connections>
