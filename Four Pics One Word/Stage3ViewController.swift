@@ -13,7 +13,7 @@ class Stage3ViewController: UIViewController {
     
     @IBOutlet weak var hintText: UITextView!
     @IBAction func hintButton(_ sender: UIButton) {
-        hintText.text = "60 seconds is called a"
+        hintText.text = "Hint: 60 seconds is called a ___"
     }
     
     @IBOutlet weak var textField: UITextField!
