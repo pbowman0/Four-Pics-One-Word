@@ -8,11 +8,14 @@
 import UIKit
 
 class Stage4ViewController: UIViewController {
-
+    
     var correctAnswer4 = ["draft", "Draft", "DRAFT"]
     var points = Points()
     @IBOutlet weak var hintText: UITextView!
     @IBOutlet weak var pointCount: UILabel!
+    var data = ""
+    
+    //gives hint and subtracts points
     @IBAction func hintButton(_ sender: UIButton) {
         points.count -= 1
         var previousPoints = points.count
@@ -21,8 +24,8 @@ class Stage4ViewController: UIViewController {
     }
     
     @IBOutlet weak var textField: UITextField!
-    var data = ""
     
+    //if answer is correct performs segue and adds points
     @IBAction func answerButton(_ sender: UIButton) {
         for answer in correctAnswer4{
             if answer == textField.text {
@@ -50,6 +53,7 @@ class Stage4ViewController: UIViewController {
         self.view.endEditing(true)
     }
     
+    //passes points data over to next view
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let dvc = segue.destination as! Stage5ViewController
         dvc.data = "This came from the fourth VC"

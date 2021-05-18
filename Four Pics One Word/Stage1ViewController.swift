@@ -21,6 +21,7 @@ class Stage1ViewController: UIViewController {
     @IBOutlet weak var pointCount: UILabel!
     var points = Points()
     
+    //if answer is correct performs segue and adds points
     @IBAction func button(_ sender: UIButton) {
         for answer in correctAnswer1
         {
@@ -31,6 +32,8 @@ class Stage1ViewController: UIViewController {
             }
         }
     }
+    
+    //gives hint and subtracts points
     @IBAction func hintButton(_ sender: Any) {
         hintText.text = "Hint: What season is October in?"
         points.count -= 1
@@ -46,6 +49,7 @@ class Stage1ViewController: UIViewController {
         self.view.endEditing(true)
     }
     
+    //passes points data over to next view
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let dvc = segue.destination as! Stage2ViewController
         dvc.data = "This came from the first VC"
